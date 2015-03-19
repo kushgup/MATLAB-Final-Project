@@ -1,0 +1,15 @@
+% Kush Gupta
+% Final Project - Ion Channels
+% Worked with Rajiv Deshpande and Vignesh Ramchandaran
+
+% Initializing Variables
+
+v = -.002;
+alpha = .835 * exp (.027 * (v - 35) )	%equivalent to lambda for state 1
+beta = .033 * exp (-.093 * (v - 35) )	%equivalent to lambda for state 2
+
+% Dwell Times:	
+
+u = rand
+dwellS1 = -(1/alpha)*log(u)
+dwellS2 = -(1/beta)*log(u)
